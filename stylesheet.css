@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@500&display=swap');
+
+:root {
+    --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+    --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+    --White: hsl(0, 0%, 100%);
+    --Very-Dark-Magenta: hsl(300, 43%, 22%);
+    --Soft-Pink: hsl(333, 80%, 67%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(/images/bg-pattern-top-desktop.svg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    font-family: 'Spartan', sans-serif;
+}
+
+.container {
+    margin: auto;
+    margin-top: 125px;
+    width: 1010px;
+    height: 642px;
+}
+
+.bagian-atas {
+    display: flex;
+}
+
+.caption {
+    height: 300px;
+    max-width: 491px;
+    margin-right: 45px;
+}
+
+.caption > h1 {
+    color: var(--Very-Dark-Magenta);
+    font-size: 41px;
+    font-weight: 700;
+    max-width: 335px;
+    margin-bottom: 18px;
+}
+
+.caption > p {
+    color: var(--Dark-Grayish-Magenta);
+    font-weight: 500;
+    line-height: 1.6;
+    font-size: 15px;
+}
+
+.star {
+    height: 186px;
+    width: 463px;
+    float: right;
+    margin-top: 26px;
+    margin-left: 45px;
+}
+
+.gambar-bintang {
+    padding: 10px 0px;
+    margin-left: 24px;
+}
+
+.ikon-bintang {
+    margin: 4px 4px;
+}
+
+.first-star, .second-star, .third-star {
+    display: flex;
+    background-color: var(--Light-Grayish-Magenta);
+    height: 50px;
+    width: 455px;
+    margin-bottom: 15px;
+    color: var(--Very-Dark-Magenta);
+    font-size: 12px;
+    border-radius: 8px;
+}
+
+.second-star {
+    margin-left: 30px;
+}
+
+.third-star {
+    margin-left: 60px;
+}
+
+.first-star > h3, .second-star > h3, .third-star > h3 {
+    margin-left: 30px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.bagian-bawah {
+    width: 68rem;
+    display: flex;
+    height: 305px;
+}
+
+.satu, .dua, .tiga {
+    background-color: var(--Very-Dark-Magenta);
+    margin-bottom: 30px;
+    color: white;
+    margin-right: 30px;
+    border-radius: 10px;
+    max-width: 338px;
+    max-height: 237px;
+}
+
+.image {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-top: 32px;
+    margin-bottom: 20px;
+    margin-left: 28px;
+    margin-right: 21px;
+    float: left;
+}
+
+.keterangan {
+    padding-top: 7px;
+    padding-bottom: 2px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+.keterangan > h4 {
+    color: white;
+    font-size: 12px;
+    padding-bottom: 7px;
+}
+
+.keterangan > h5 {
+    color: var(--Soft-Pink);
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.satu > p, .dua > p, .tiga > p {
+    font-size: 12px;
+    line-height: 1.6;
+    margin-left: 26px;
+    margin-right: 26px;
+}
+
+.dua {
+    margin-top: 15px;
+}
+
+.tiga {
+    margin-top: 30px;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 375px) {
+    body {
+        background-image: url(/images/bg-pattern-top-mobile.svg);
+        background-repeat: no-repeat;
+    }
+
+    .container {
+        height: 249vh;
+        width: 375px;
+        margin: auto;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 80px;
+    }
+
+    .bagian-atas {
+        flex-direction: column;
+        margin: 0;
+        max-width: 300px;
+        justify-content: center;
+        margin-bottom: 7em;
+    }
+
+    .caption {
+        margin: auto;
+        height: 250px;
+    }
+
+    .caption > h1 {
+        font-size: 37px;
+        width: 335px;
+        text-align: center;
+    }
+
+    .caption > p {
+        text-align: center;
+        width: 339px;
+    }
+
+    .gambar-bintang {
+        padding: 0;
+        margin: auto;
+        margin-top: 10px;
+    }
+
+    .first-star > h3, .second-star > h3, .third-star > h3 {
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 14px;
+    }
+
+    .bagian-bawah {
+        flex-direction: column;
+        height: 130vh;
+    }
+
+    .star {
+        width: 339px;
+        margin: auto;
+        margin-top: 30px;
+    }
+
+    .first-star, .second-star, .third-star {
+        flex-direction: column;
+        max-width: 339px;
+        height: 74px;
+    }
+
+    .second-star {
+        margin-left: 0;
+    }
+    
+    .third-star {
+        margin-left: 0;
+    }
+
+    .bagian-bawah {
+        max-width: 375px;
+    }
+
+    .keterangan {
+        margin-bottom: 20px;
+    }
+
+    .satu, .dua, .tiga {
+        max-height: 260px;
+        margin-bottom: 3px;
+    }
+
+    .satu > p, .dua > p, .tiga > p {
+        height: 110px;
+    }
+}
